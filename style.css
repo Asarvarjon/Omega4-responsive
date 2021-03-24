@@ -48,6 +48,11 @@ nav {
 
 }
 
+.bar-photo {
+    display: none;
+    width: 35px;
+}
+
 .nav-link {
     margin-left: 30px;
     font-size: 16px;
@@ -223,6 +228,10 @@ main .container {
     display: flex;
     align-items: center;
     flex-direction: row;
+    margin-top: 10px;
+    background: #FFFFFF;
+    border: 1px solid #d1d1d6;
+    border-radius: 10px;
 }
 
 .design-info {
@@ -354,6 +363,10 @@ main .container {
     width: 730px;
 }
 
+.headset-box {
+    width: 50%;
+}
+
 .man-with-headset {
     padding: 200px 150px;
     background-image: url(./img/BG.png);
@@ -429,11 +442,19 @@ main .container {
 .first-review {
     width: 35%;
     margin-left: 170px;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid #96959b;
+    border-radius: 10px;
+    padding: 25px;
 }
 
 .second-review {
     width: 35%;
     margin-left: 45px;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid #96959b;
+    border-radius: 10px;
+    padding: 25px;
 
 }
 
@@ -588,4 +609,456 @@ footer .container {
     text-align: right;
     letter-spacing: -0.500211px;
     color: #19191B;
+}
+
+
+@media (max-width:1160px) {
+    .container {
+        width: 1000px;
+    }
+
+    .footer-list {
+        margin-left: 200px;
+    }
+}
+
+
+@media (max-width:1020px) {
+    .container {
+        width: 900px;
+    }
+
+    .man-photo {
+        width: 350px;
+        height: 500px;
+    }
+
+    .woman-photo {
+        width: 550px;
+        height: 500px;
+    }
+
+    .nav-list {
+        margin-left: 250px;
+    }
+}
+
+
+@media (max-width:920px) {
+    .container {
+        width: 800px;
+    }
+
+    .header {
+        background-image: none;
+    }
+
+    .header .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-info {
+        padding: 80px;
+        margin: 0px;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-title,
+    .main-title {
+        text-align: center;
+    }
+
+    .header-text,
+    .main-text {
+        text-align: center;
+    }
+
+    .nav-cart-link {
+        margin-left: 20px;
+    }
+
+    main {
+        background-image: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       text-align: center;
+    }
+
+    .main-info {
+        margin: 0px;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .features-section .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .first-features-box,
+    .second-feature-box,
+    .third-features-box {
+        display: flex;
+        width: 80%;
+        flex-direction: column;
+        margin: 0px;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .features-title {
+        margin-bottom: 30px;
+    }
+
+    .feature-item {
+        width: 60%;
+        margin-top: 15px;
+    }
+
+    .last {
+        margin-left: 10px;
+    }
+
+    .images .container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .images-info {
+        width: 80%;
+    }
+
+    .photos {
+        width: 80%;
+    }
+
+
+    main {
+        text-align: center;
+    }
+    .woman-photo {
+        width: 400px;
+        height: 350px;
+    }
+
+    .man-photo {
+        width: 250px;
+        height: 350px;
+    }
+
+    .man-with-headset {
+        background-image: none;
+        background-color: #016BA2;
+        background-size: cover;
+        padding: 80px;
+    }
+
+    .headset-box {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .headset-title {
+        text-align: center;
+    }
+
+    .headset-text {
+        text-align: center;
+    }
+
+    .reviews-section .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .customer-review-box {
+        width: 80%;
+    }
+
+    .first-review {
+        margin-left: 0px;
+    }
+
+    .footer-list {
+        margin-left: 30px;
+    }
+
+    .last-section .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .last-section-title {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .buy-link {
+        margin-left: 40px;
+    }
+}
+
+@media (max-width:820px) {
+    .container {
+        width: 700px;
+    }
+
+    footer .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .first-review {
+        margin-left: 100px;
+    }
+
+    .footer-text {
+        margin-left: 0px;
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width:720px) {
+    .container {
+        width: 600px;
+    }
+
+
+   .reviews {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+
+   .first-review {
+       width: 60%;
+       margin: 0px;
+   }
+
+   .second-review {
+       width: 60%;
+       margin: 0px;
+       margin-top: 30px;
+      
+   }
+
+   main {
+       margin-left: 20px;
+   }
+
+   .man-photo {
+       width: 200px;
+       height: 250px;
+   }
+
+   .woman-photo {
+       width: 280px;
+       height: 250px;
+   }
+
+   .nav-title {
+       padding-left: 20px;
+   }
+
+   .nav-list {
+       margin-left: 150px;
+   }
+
+   .header-title, .main-title {
+       font-size: 40px;
+   }
+
+   .header-text, .main-text, .features-text, .images-section-text, .header-text, .review-section-text, .last-section-text {
+    font-size: 18px;
+}
+
+ .features-title, .images-section-title {
+     font-size: 40px;
+ }
+
+ .headset-title, .review-section-title, .last-section-title {
+     font-size: 40px;
+ }
+}
+
+
+@media (max-width:620px) {
+    .container {
+        width: 500px;
+    }
+
+    .nav-list{
+        display: none;
+    }
+
+    .nav-cart-link {
+        display: none;
+    }
+
+    .bar-photo {
+        display: block;
+        margin-left: 300px;
+    }
+
+    .feature-item {
+        width: 80%;
+    }
+}
+
+
+@media (max-width:520px) {
+    .container {
+        width: 90%;
+    }
+
+    .bar-photo {
+        margin-left: 180px;
+    }
+
+   .header-info {
+       width: 100%;
+       padding: 20px;
+   }
+
+   .header-title{
+       font-size: 32px;
+       line-height: normal;
+
+   }
+
+   .header-text {
+       line-height: normal;
+       text-align: center;
+   }
+
+   .nav-title {
+       padding-left: 0px;
+   }
+
+   .main {
+       padding: 20px;
+       margin-left: 20px;
+   }
+
+   .main-info {
+       width: 100%;
+   }
+
+   .main-title {
+       line-height: normal;
+       font-size: 32px;
+   }
+
+   .main-text {
+       text-align: center;
+      font-size: 18px;
+   }
+
+   .design-info {
+       font-size: 19px;
+   }
+
+   .features-section .container {
+       padding: 50px 0px;
+   }
+
+   .feature-item {
+       width: 95%;
+   }
+
+   .features-title {
+       font-size: 32px;
+       
+   }
+
+
+   .man-photo {
+       width: 150px;
+       height: 210px;
+   }
+
+   .woman-photo {
+       width: 180px;
+       height: 210px;
+   }
+
+   .images-section-title {
+       font-size: 32px;
+   }
+
+
+   .images-section-text {
+       margin: 0px;
+       line-height: 27px;
+       padding-bottom: 30px;
+   }
+
+   .man-with-headset {
+       padding: 60px 10px;
+   }
+
+   .headset-box {
+       width: 100%;
+       margin: 0px;
+       padding: 0px;
+   }
+
+   .headset-title {
+       font-size: 32px;
+       line-height: 40px;
+   }
+
+   .headset-text {
+       font-size: 19px;
+   }
+
+   .review-section-title {
+       font-size: 32px;
+       line-height: 40px;
+   }
+
+   .reviews {
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+   }
+
+   .first-review, .second-review {
+       width: 95%;
+   }
+
+   .last-section .container {
+       padding: 80px 20px;
+   }
+
+   .last-section-title {
+       font-size: 32px;
+       line-height: 40px;
+   }
 }
