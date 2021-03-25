@@ -123,18 +123,44 @@ nav {
 }
 
 .main-form {
+    position: relative;
+}
+
+.plus {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 23%;
+}
+
+.plus-button, .minus-button {
+    width: 25px;
+    height: 27.5px;
+    border: none;
+    border-radius: 2px;
+}
+
+.minus-button {
+    
+    padding-bottom: 15px;
+}
+
+.main-form {
     display: flex;
     flex-direction: row;
 }
 
 .main-input {
-    width: 70px;
+    width: 90px;
     height: 55px;
     padding: 20px;
     border: none;
     border-radius: 5px;
+    outline: none;
 }
-}
+
+
+
 
 .price-box {
     padding: 15px;
@@ -198,7 +224,7 @@ nav {
 .buy-product {
     width: 160px;
     height: 55px;
-    margin-left: 10px;
+    margin-left: 20px;
     border: none;
     border-radius: 5px;
     background-color: #FEDC5A;
