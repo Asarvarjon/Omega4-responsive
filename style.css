@@ -122,6 +122,20 @@ nav {
 
 }
 
+.main-form {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-input {
+    width: 70px;
+    height: 55px;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+}
+}
+
 .price-box {
     padding: 15px;
     display: flex;
@@ -199,7 +213,6 @@ nav {
 
 main {
     padding: 100px 0px;
-    margin-left: 200px;
     background-image: url(./img/Bitmap.png);
     background-repeat: no-repeat;
     background-position-x: right;
@@ -225,6 +238,8 @@ main .container {
 
 
 .design-item {
+    cursor: pointer;
+    width: 70%;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -261,7 +276,7 @@ main .container {
 }
 
 .features-section .container {
-    padding: 60px 25px;
+    padding: 60px 0px;
     display: flex;
     flex-direction: column;
 
@@ -274,6 +289,7 @@ main .container {
 }
 
 .feature-item {
+    cursor: pointer;
     width: 38%;
     display: flex;
     align-items: center;
@@ -312,6 +328,10 @@ main .container {
 
 .last {
     margin-left: 80px;
+}
+
+.images-info {
+    width: 50%;
 }
 
 
@@ -356,11 +376,13 @@ main .container {
 }
 
 .man-photo {
-    max-width: 100%;
+    object-fit: cover;
+    max-width: 30%;
 }
 
 .woman-photo {
-    width: 730px;
+    width: 70%;
+    object-fit: cover;
 }
 
 .headset-box {
@@ -368,7 +390,7 @@ main .container {
 }
 
 .man-with-headset {
-    padding: 200px 150px;
+    padding: 200px 0px;
     background-image: url(./img/BG.png);
     background-repeat: no-repeat;
     background-position-x: center;
@@ -437,6 +459,12 @@ main .container {
     padding-top: 60px;
 
 
+}
+
+.customer-review-box {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .first-review {
@@ -532,7 +560,7 @@ main .container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 80px 80px;
+    padding: 80px 0px;
 }
 
 .last-section-title {
@@ -558,7 +586,7 @@ main .container {
     letter-spacing: -0.656526px;
     color: rgba(0, 0, 0, 0.788926);
     text-decoration: none;
-    margin-left: 200px;
+    margin-left: auto;
 }
 
 .buy-link:hover {
