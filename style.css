@@ -130,7 +130,7 @@ nav {
     position: absolute;
     display: flex;
     flex-direction: column;
-    left: 23%;
+    left: 24%;
 }
 
 .plus-button, .minus-button {
