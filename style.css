@@ -1121,6 +1121,13 @@ footer .container {
 
    }
 
+   .save-link {
+       font-size: 13px;
+   }
+
+   .price-title {
+       font-size: 48px;
+   }
    .header-text {
        line-height: 33px;
        text-align: center;
