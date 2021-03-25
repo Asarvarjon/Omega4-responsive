@@ -101,7 +101,7 @@ nav {
 .header-info {
     padding: 180px 0px;
     width: 43%;
-    margin-left: 550px;
+    margin-left: 600px;
 }
 
 
@@ -266,10 +266,11 @@ main .container {
 .design-item {
     cursor: pointer;
     width: 70%;
+    padding: 10px;
     display: flex;
     align-items: center;
     flex-direction: row;
-    margin-top: 10px;
+    margin-top: 15px;
     background: #FFFFFF;
     border: 1px solid #d1d1d6;
     border-radius: 10px;
@@ -421,6 +422,7 @@ main .container {
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: top;
+    background-size: cover;
 }
 
 .headset-title {
@@ -674,6 +676,30 @@ footer .container {
     .footer-list {
         margin-left: 200px;
     }
+
+    .header {
+       background-size: 600px;
+    }
+
+    .header-info {
+        width: 45%;
+        margin-left: 500px;
+    }
+    .header-title {
+        font-size: 50px;
+    }
+
+    main {
+        background-size: 550px;
+    }
+
+    .main-info {
+        width: 45%;
+    }
+
+    .design-item {
+        width: 80%;
+    }
 }
 
 
@@ -682,18 +708,53 @@ footer .container {
         width: 900px;
     }
 
+    .header {
+        background-size:  550px;
+    }
+
+    .header-info {
+        width: 50%;
+        margin-left: 450px;
+    }
+
+    main {
+        background-size: 500px;
+    }
+
+    .main-info {
+        width: 48%;
+    }
+
+
+    .header-title {
+        font-size: 50px;
+    }
+
+  
+    .feature-name {
+        font-size: 17px;
+    }
     .man-photo {
-        width: 350px;
+        width: 30%;
         height: 500px;
     }
 
     .woman-photo {
-        width: 550px;
+        width: 70%;
         height: 500px;
     }
 
+    
+
     .nav-list {
         margin-left: 250px;
+    }
+
+
+    .reviews {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
 }
 
@@ -774,7 +835,7 @@ footer .container {
     }
 
     .feature-item {
-        width: 60%;
+        width: 90%;
         margin-top: 15px;
     }
 
@@ -786,8 +847,7 @@ footer .container {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-        margin: 0px;
-        padding: 0px;
+        padding: 60px 0px;
     }
 
     .images-info {
@@ -795,20 +855,39 @@ footer .container {
     }
 
     .photos {
-        width: 80%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
 
-    main {
-        text-align: center;
+    main .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .design-list {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .design-item {
+        width: 70%;
+        padding: 10px;
+        margin-top: 25px;
     }
     .woman-photo {
-        width: 400px;
+        width: 70%;
         height: 350px;
     }
 
     .man-photo {
-        width: 250px;
+        width: 30%;
         height: 350px;
     }
 
@@ -816,7 +895,14 @@ footer .container {
         background-image: none;
         background-color: #016BA2;
         background-size: cover;
-        padding: 80px;
+        padding: 80px 0px;
+    }
+
+    .man-with-headset .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .headset-box {
@@ -839,18 +925,29 @@ footer .container {
         display: flex;
         flex-direction: column;
         align-items: center;
+        
     }
 
     .customer-review-box {
         width: 80%;
     }
 
-    .first-review {
-        margin-left: 0px;
+    .reviews {
+        justify-content: space-between;
     }
 
+    .first-review,  .second-review {
+        margin-left: 0px;
+        width: 48%;
+    }
+
+    
+
     .footer-list {
-        margin-left: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: auto;
     }
 
     .last-section .container {
@@ -865,7 +962,8 @@ footer .container {
     }
 
     .buy-link {
-        margin-left: 40px;
+        text-align: center;
+        margin-left: 0px;
     }
 }
 
@@ -884,11 +982,11 @@ footer .container {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        margin-left: 0px;
     }
 
-    .first-review {
-        margin-left: 100px;
-    }
+  
 
     .footer-text {
         margin-left: 0px;
@@ -921,18 +1019,22 @@ footer .container {
        margin-top: 30px;
       
    }
+ 
 
-   main {
-       margin-left: 20px;
+   .header-info {
+       width: 70%;
+       padding: 80px 0px;
    }
 
    .man-photo {
-       width: 200px;
+       object-fit: cover;
+       width: 30%;
        height: 250px;
    }
 
    .woman-photo {
-       width: 280px;
+       object-fit: cover;
+       width: 70%;
        height: 250px;
    }
 
@@ -946,6 +1048,14 @@ footer .container {
 
    .header-title, .main-title {
        font-size: 40px;
+   }
+
+   .design-item {
+       width: 90%;
+   }
+
+   .first-review, .second-review {
+       width: 75%;
    }
 
    .header-text, .main-text, .features-text, .images-section-text, .header-text, .review-section-text, .last-section-text {
@@ -974,10 +1084,12 @@ footer .container {
     .nav-cart-link {
         display: none;
     }
+    
 
     .bar-photo {
         display: block;
-        margin-left: 300px;
+        margin-left: 330px;
+      
     }
 
     .feature-item {
@@ -990,9 +1102,12 @@ footer .container {
     .container {
         width: 90%;
     }
+    .nav {
+        justify-content: space-between;
+    }
 
     .bar-photo {
-        margin-left: 180px;
+        margin-left: 200px;
     }
 
    .header-info {
@@ -1015,9 +1130,13 @@ footer .container {
        padding-left: 0px;
    }
 
+   .price-box {
+       width: 100%;
+   }
+
    .main {
        padding: 20px;
-       margin-left: 20px;
+      
    }
 
    .main-info {
@@ -1039,12 +1158,16 @@ footer .container {
        font-size: 19px;
    }
 
+   .design-item {
+       width: 100%;
+   }
+
    .features-section .container {
        padding: 50px 0px;
    }
 
    .feature-item {
-       width: 95%;
+       width: 100%;
    }
 
    .features-title {
@@ -1054,12 +1177,12 @@ footer .container {
 
 
    .man-photo {
-       width: 150px;
+       width: 29%;
        height: 210px;
    }
 
    .woman-photo {
-       width: 180px;
+       width: 68%;
        height: 210px;
    }
 
@@ -1109,7 +1232,7 @@ footer .container {
    }
 
    .last-section .container {
-       padding: 80px 20px;
+       padding: 80px 0px;
    }
 
    .last-section-title {
