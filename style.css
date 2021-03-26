@@ -1215,15 +1215,20 @@ footer .container {
    .header-title{
        font-size: 32px;
        line-height: normal;
+     
 
    }
 
    .save-link {
        font-size: 13px;
+       padding: 5px 10px;
+       margin-left: 5px;
+       height: auto;
+       width: auto;
    }
 
    .price-title {
-       font-size: 48px;
+       font-size: 38px;
    }
    .header-text {
        line-height: 33px;
