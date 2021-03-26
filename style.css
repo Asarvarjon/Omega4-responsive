@@ -1219,10 +1219,16 @@ footer .container {
 
    }
 
+   .up {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+   }
+
    .save-link {
        font-size: 13px;
        padding: 5px 10px;
-       margin-left: 5px;
+       margin-left: auto;
        height: auto;
        width: auto;
    }
