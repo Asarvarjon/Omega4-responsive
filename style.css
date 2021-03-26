@@ -309,21 +309,26 @@ main .container {
 
 }
 
-.first-features-box {
+.feature-list {
     display: flex;
     padding: 70px 40px;
-    justify-content: space-between;
+    flex-wrap: wrap;
+   
 }
 
 .feature-item {
     cursor: pointer;
-    width: 38%;
+    width: 30%;
     display: flex;
     align-items: center;
-    margin: 0px 10px;
+    margin: 20px 15px;
     padding: 10px;
     background-color: #ffffff;
     border-radius: 5px;
+}
+
+.center-left {
+    margin-left: 140px;
 }
 
 .features-title {
@@ -744,6 +749,25 @@ footer .container {
         height: 500px;
     }
 
+    .features-section .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .feature-list {
+        padding: 50px 0px;
+    }
+
+    .feature-item {
+        width: 45%;
+    }
+
+    .center-left {
+        margin-left: 15px;
+    }
+
     
 
     .nav-list {
@@ -819,15 +843,8 @@ footer .container {
         align-items: center;
     }
 
-    .first-features-box,
-    .second-feature-box,
-    .third-features-box {
-        display: flex;
-        width: 80%;
-        flex-direction: column;
-        margin: 0px;
-        align-items: center;
-        padding: 0px;
+    .feature-list {
+        padding-top: 30px;
     }
 
     .features-title {
@@ -835,8 +852,8 @@ footer .container {
     }
 
     .feature-item {
-        width: 90%;
-        margin-top: 15px;
+            width: 45%;
+        
     }
 
     .last {
@@ -1069,6 +1086,10 @@ footer .container {
  .headset-title, .review-section-title, .last-section-title {
      font-size: 40px;
  }
+
+ .feature-item {
+     width: 90%;
+ }
 }
 
 
@@ -1093,7 +1114,7 @@ footer .container {
     }
 
     .feature-item {
-        width: 80%;
+        width: 90%;
     }
 }
 
@@ -1171,6 +1192,10 @@ footer .container {
 
    .features-section .container {
        padding: 50px 0px;
+   }
+
+   .feature-list {
+       width: 100%;
    }
 
    .feature-item {
