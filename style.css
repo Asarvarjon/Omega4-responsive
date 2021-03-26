@@ -23,10 +23,13 @@ img {
 
 .header {
     background-color: #5454D4;
-    background-image: url(./img/image.png);
-    background-repeat: no-repeat;
-    background-position-y: center;
+ 
 
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
 }
 
 nav {
@@ -98,10 +101,20 @@ nav {
 
 }
 
+.header-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.header-header-img {
+    width: 50%;
+}
 .header-info {
     padding: 180px 0px;
-    width: 43%;
-    margin-left: 600px;
+    width: 45%;
 }
 
 
@@ -239,18 +252,21 @@ nav {
 
 main {
     padding: 100px 0px;
-    background-image: url(./img/Bitmap.png);
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: center;
+ 
 }
 
 main .container {
     display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .main-info {
     width: 45%;
+}
+
+.main-img-box {
+    width: 52%;
 }
 
 .main-text {
@@ -688,7 +704,11 @@ footer .container {
 
     .header-info {
         width: 45%;
-        margin-left: 500px;
+       
+    }
+
+    .header-header-img {
+        width: 50%;
     }
     .header-title {
         font-size: 50px;
@@ -702,6 +722,10 @@ footer .container {
         width: 45%;
     }
 
+    .main-img-box {
+        width: 50%;
+    }
+
     .design-item {
         width: 80%;
     }
@@ -711,6 +735,7 @@ footer .container {
 @media (max-width:1020px) {
     .container {
         width: 900px;
+        padding: 0px 20px;
     }
 
     .header {
@@ -719,7 +744,7 @@ footer .container {
 
     .header-info {
         width: 50%;
-        margin-left: 450px;
+       
     }
 
     main {
@@ -731,8 +756,16 @@ footer .container {
     }
 
 
-    .header-title {
-        font-size: 50px;
+    .header-title, .main-title,  .headset-title, .review-section-title, .last-section-title, .features-title, .images-section-title {
+        font-size: 45px;
+    }
+
+    .header-text, .main-text, .features-text, .images-section-text, .header-text, .review-section-text, .last-section-text {
+        font-size: 19px;
+    }
+
+    .header-text, .main-text {
+        font-size: 19px;
     }
 
   
@@ -798,13 +831,26 @@ footer .container {
         align-items: center;
     }
 
+    .header-header {
+        display: flex;
+        flex-direction: column;
+    }
+
     .header-info {
-        padding: 80px;
+        padding: 30px 0px 50px 0px;
         margin: 0px;
         width: 80%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
+    }
+
+    .price-box {
+        width: 70%;
+    }
+    .header-header-img {
+        width: 50%;
     }
 
     .header-title,
@@ -822,11 +868,17 @@ footer .container {
     }
 
     main {
-        background-image: none;
+
         display: flex;
         flex-direction: column;
         align-items: center;
        text-align: center;
+    }
+
+    main .container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
     }
 
     .main-info {
@@ -989,6 +1041,11 @@ footer .container {
         width: 700px;
     }
 
+    .nav-list {
+        margin-left: 220px;
+    }
+   
+
     footer .container {
         display: flex;
         flex-direction: column;
@@ -1019,6 +1076,10 @@ footer .container {
     }
 
 
+    .header-info {
+        padding: 0px;
+    }
+
    .reviews {
        display: flex;
        flex-direction: column;
@@ -1040,7 +1101,7 @@ footer .container {
 
    .header-info {
        width: 70%;
-       padding: 80px 0px;
+       padding: 30px 0px;
    }
 
    .man-photo {
@@ -1060,7 +1121,7 @@ footer .container {
    }
 
    .nav-list {
-       margin-left: 150px;
+       margin-left: 100px;
    }
 
    .header-title, .main-title {
@@ -1105,6 +1166,17 @@ footer .container {
     .nav-cart-link {
         display: none;
     }
+
+    .header-header-img {
+        width: 70%;
+    }
+    .header-title, .main-title {
+        line-height: normal;
+    }
+
+    .price-box {
+        width: 100%;
+    }
     
 
     .bar-photo {
@@ -1115,6 +1187,10 @@ footer .container {
 
     .feature-item {
         width: 90%;
+    }
+
+    .design-item {
+        width: 100%;
     }
 }
 
